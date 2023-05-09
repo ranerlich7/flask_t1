@@ -11,4 +11,13 @@
 4. show render_template
 excercise: 
 improve news website. 
-create a template for sports blueprint
+create an html page for news and world news blueprint
+homework: complete other pages.
+(1 hour?)
+
+5. login
+(30 min?)
+a. get user name and password. test if ok login. if not write wrong
+
+b. get x,y numbers and return x+y
+
