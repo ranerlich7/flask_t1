@@ -1,16 +1,16 @@
 
-from flask import Flask, Blueprint, jsonify
+from flask import Flask, Blueprint, render_template
 print(f"my __name__ is:{__name__}")
-news_bp = Blueprint('news', __name__)
+news_bp = Blueprint('news', __name__,url_prefix='/news', template_folder='templates/news7')
 
 
-@news_bp.route("/news")
+@news_bp.route("/")
 def news():
-   return "<p>This is the NEWS section!</p>"
+   return render_template('main_news.html')
 
-@news_bp.route("/news/world")
+@news_bp.route("/world")
 def world():
-   return "<p>This is the WORLD NEWS section!</p>"
+   return render_template('world_news.html')
 
 from flask import Flask, Blueprint, jsonify
 

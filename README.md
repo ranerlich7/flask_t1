@@ -9,4 +9,6 @@
  each one should have 3 routes
 
 4. show render_template
-excercise: improve news website.
+excercise: 
+improve news website. 
+create a template for sports blueprint
