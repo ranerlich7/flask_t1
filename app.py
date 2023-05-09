@@ -1,7 +1,8 @@
 from flask import Flask
-
-
+from news import news_bp
 app = Flask(__name__)
+
+app.register_blueprint(news_bp)# , url_prefix='/news')
 
 @app.route("/")
 def hello_world():
